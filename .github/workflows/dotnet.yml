@@ -14,7 +14,11 @@ jobs:
   build-dot-net-app:
 
     runs-on: ubuntu-latest
-
+    
+    defaults:
+      run:
+        working-directory: 03-app-dotnet
+        
     steps:
     - uses: actions/checkout@v4
     - name: Setup .NET

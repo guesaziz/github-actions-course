@@ -1,16 +1,17 @@
 # This workflow will build a .NET project
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
 
-name: build dotnet .NET
+name: 031- build dotnet .NET
 
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+  workflow_dispatch:
+  
 jobs:
-  build:
+  build-dot-net-app:
 
     runs-on: ubuntu-latest
 
